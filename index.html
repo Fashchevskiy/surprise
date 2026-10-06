@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2a2030">
+  <title>Для тебе</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="hearts-layer" id="hearts"></div>
+
+  <main class="stage">
+
+    <!-- Екран 1 -->
+    <section class="screen active" data-screen="1">
+      <p class="text">Для тебе є дещо маленьке... ❤️</p>
+      <button class="btn" data-next>Відкрити ❤️</button>
+    </section>
+
+    <!-- Екран 2 -->
+    <section class="screen" data-screen="2">
+      <p class="text big">я скучив</p>
+      <button class="btn" data-next data-burst>я також ❤️</button>
+    </section>
+
+    <!-- Екран 3 -->
+    <section class="screen" data-screen="3">
+      <p class="text">я радий, що ви все таки тоді прийшли на пікнік &lt;3</p>
+      <button class="btn btn-round" data-next data-burst aria-label="Серце">❤️</button>
+    </section>
+
+    <!-- Фінальний екран -->
+    <section class="screen final" data-screen="4">
+      <div class="photo-wrap">
+        <div class="photo-hearts" id="photoHearts"></div>
+        <!-- Поклади своє фото поруч з index.html під назвою photo.jpg -->
+        <img class="photo" src="photo.jpg" alt="Наше фото">
+      </div>
+      <p class="love">Я тебе люблю ❤️</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
